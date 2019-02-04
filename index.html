@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ready_Kali_Hunter?">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- https://developers.google.com/speed/libraries/#jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--/ https://developers.google.com/speed/libraries/#jquery -->
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet"> <!-- Charm font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> <!-- Raleway font -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> <!-- Oxygen font -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> <!-- Courgette font -->
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet"> <!-- Marck Script font -->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet"> <!-- IM FELL English font -->
+    <link href="https://fonts.googleapis.com/css?family=Sail" rel="stylesheet"> <!-- Sail font -->
+    <link rel="stylesheet" href="jquery-ui.min.css"> <!-- JQUERY UI CSS -->
+    <script src="jquery-ui.min.js" charset="utf-8"></script> <!-- JQUERY UI JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Bootstrap fallback -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font awesome link -->
+    <link rel="shortcut icon" type="x-icon" href="ytdocpic.ico">
+    <!-- Font awesome advanced (fab) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/v4-shims.css">
+    <title>YouTube clone</title>
+  </head>
+  <body>
+    <header>
+      <nav class="sidenav" id="mainNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="YouTube_Logo.svg" id="navLogo" alt="YTLogo" height="30px" width="58px">
+        <ul id="navUl">
+          <li><span class="fa fa-home"> </span><a href="#"> Home</a></li>
+          <li><span class="fab fa-gripfire"> </span><a href="#"> Trending</a></li>
+          <li><span class="fab fa-youtube"> </span><a href="#"> Subscriptions</a></li><hr>
+          <li><span class="fa fa-folder"> </span><a href="#"> Library</a></li>
+          <li><span class="fa fa-history"> </span><a href="#"> History</a></li>
+          <li><span class="fa fa-clock-o"> </span><a href="#"> Watch later</a></li>
+          <li><span class="fa fa-thumbs-up"></span><a href="#"> Liked videos</a></li>
+          <li><span class="fa fa-list"> </span><a href="#"> Playlist</a></li>
+        </ul>
+      </nav>
+      <span class="fa fa-bars" onclick="openNav()"> </span>
+      <img id="logo" src="YouTube_Logo.svg" alt="YTLogo" height="30px" width="58px">
+      <table id="searchtable">
+        <tr>
+          <td><input type="text" name="searchbar" placeholder="Search"><span class="fa fa-search"> </span></td>
+        </tr>
+      </table>
+      <img src="avatar.jpeg" id="avatar" alt="Yt avatar" height="40px" width="40px">
+    </header>
+    <main id="push">
+      <!-- FIRST ROW: one video only -->
+      <div class="row">
+        <div class="video">
+          <figure>
+            <img src="video.png" alt="Video">
+          </figure>
+          <div class="info">
+            <h1 title="video-name">Video name</h1><!-- Verified icon -->
+            <p title="channel">Uploader <span class="fa fa-check-circle" style="color: gray; background-color: white;"></span> Time - ago</p>
+            <p title="video-info">About the video</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- SECOND ROW: an array of videos -->
+      <div class="row">
+        <div class="video">
+          <figure>
+            <img src="video.png" alt="Video">
+            <figcaption title="row2"><span class="name" style="color: black;">Video name</span><br>UploaderChannel</figcaption>
+          </figure>
+        </div>
+        <div class="video">
+          <figure>
+            <img src="video.png" alt="Video">
+            <figcaption title="row2"><span class="name" style="color: black;">Video name</span><br>UploaderChannel</figcaption>
+          </figure>
+        </div>
+        <div class="video">
+          <figure>
+            <img src="video.png" alt="Video">
+            <figcaption title="row2"><span class="name" style="color: black;">Video name</span><br>UploaderChannel</figcaption>
+          </figure>
+        </div>
+        <div class="video">
+          <figure>
+            <img src="video.png" alt="Video">
+            <figcaption title="row2"><span class="name" style="color: black;">Video name</span><br>UploaderChannel</figcaption>
+          </figure>
+        </div>
+        <div class="video">
+          <figure>
+            <img src="video.png" alt="Video">
+            <figcaption title="row2"><span class="name" style="color: black;">Video name</span><br>UploaderChannel</figcaption>
+          </figure>
+        </div>
+        <div class="circle-select">
+          &gt;
+        </div>
+      </div>
+      <br><hr>
+      <!-- THIRD ROW: single video once again -->
+      <div class="row">
+        <div class="video">
+          <figure>
+            <img src="video.png" alt="Video">
+          </figure>
+          <div class="info">
+            <h1 title="video-name">Video name</h1><!-- ovo je verified ikonica ispod -->
+            <p title="channel">Uploader <span class="fa fa-check-circle" style="color: gray; background-color: white;"></span> Time - ago</p>
+            <p title="video-info">About the video</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <!-- No aside tags -->
+    </aside>
+    <!-- <footer> No footers </footer>-->
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("mainNav").style.width = "280px";
+        document.getElementById("push").style.marginLeft = "280px";
+      }
+
+      function closeNav() {
+        document.getElementById("mainNav").style.width = "0";
+        document.getElementById("push").style.marginLeft = "0";
+      }
+
+    </script>
+  </body>
+</html>

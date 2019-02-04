@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: flex-end;
+  justify-content: flex-end; */
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 5%;
+  background-color: white;
+}
+span.fa-bars {
+  color: gray;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+#logo {
+  padding-bottom: 3px;
+  margin-right: 150px;
+  cursor: pointer;
+}
+#searchtable {
+  border-collapse: collapse;
+  display: inline;
+}
+#searchtable td {
+  border-collapse: collapse;
+}
+input[name="searchbar"] {
+  width: 600px;
+
+  font-size: 1.2em;
+  border: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+span.fa-search {
+  /* border: 1px solid gray; */
+  padding: 3px 20px 3px 20px;
+  font-size: 1.4em;
+  color: gray;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#avatar {
+  margin: 2px 4px;
+  padding: 4px 2px;
+  float: right;
+  cursor: pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: ivory;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.6s;
+}
+.sidenav ul {
+  list-style: none; /* bulletless */
+}
+.sidenav ul li {
+  list-style-type: none; /* bulletless fallback */
+  padding: 9px 9px 9px 36px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Charm', cursive;
+  color: navy;
+  display: flex;
+  transition: 0.3s;
+}
+#navLogo {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  margin-left: 20px;
+}
+.sidenav ul li a {
+  padding: 7px 7px 7px 28px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Charm', cursive;
+  color: navy;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav ul li a:hover {
+  color: cyan;
+  font-weight: bolder;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 38px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+.closebtn {color: goldenrod;}
+#push {
+  transition: margin-left .5s;
+  padding: 3px 50px 3px 50px;
+  z-index: -1;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.video {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+hr {
+  color: black;
+  background-color: dimgray;
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+.info {
+  position: absolute;
+  top: 0;
+  left: 21%;
+  /* display: flex;
+  flex-flow: column wrap; */
+}
+.info h1[title="video-name"] {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.info p[title="channel"], .info p[title="video-info"] {
+  color: gray;
+  font-size: 0.9em;
+}
+figcaption[title="row2"] {
+  color: gray;
+}
+.circle-select {
+  position: absolute;
+  top: 25%;
+  right: -1.5%;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: ivory;
+  font-weight: bolder;
+  color: gray;
+  text-align: center;
+  font-size: 2em;
+  border: 2px groove lightgray;
+  cursor: pointer;
+  box-shadow: -1px 1px 7px black; /* ... ... ... BYOUTIFUL ... ... ... */
+}
